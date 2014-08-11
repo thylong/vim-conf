@@ -17,6 +17,7 @@ colorscheme solarized
 set clipboard=unnamed
 " Enhance command-line completion
 set wildmenu
+set wildignore=*.swp,*.bak,*.pyc,*.class
 " Allow cursor keys in insert mode
 set esckeys
 " Allow backspace in insert mode
@@ -68,7 +69,12 @@ set laststatus=2
 set modeline
 set modelines=4
 " Disable error bells
+set visualbell
 set noerrorbells
+" remember more commands and search history
+set history=1000
+" use many muchos levels of undo
+set undolevels=1000
 " Don’t reset cursor to start of line when moving around.
 set nostartofline
 " Show the cursor position
