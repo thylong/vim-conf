@@ -33,9 +33,10 @@ let mapleader=","
 " Don’t add empty newlines at the end of files
 set binary
 set noeol
-" Centralize backups, swapfiles and undo history
-set backupdir=~/.vim/backups
-set directory=~/.vim/swaps
+" NO FUCKING SWP ANYMORE
+set noswapfile
+set nobackup
+
 if exists("&undodir")
         set undodir=~/.vim/undo
 endif
